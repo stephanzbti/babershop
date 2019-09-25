@@ -6,6 +6,7 @@ import {BarbersComponent} from './pages/barbers/barbers.component'
 import {AppoinmentComponent} from './pages/appoinment/appoinment.component'
 import {ContactComponent} from './pages/contact/contact.component'
 import {LoginComponent} from './pages/login/login.component'
+import {RegisterComponent} from './pages/register/register.component'
 
 export const ROUTES: Routes = [
     {path: '', component: MainComponent},
@@ -15,4 +16,5 @@ export const ROUTES: Routes = [
     {path: 'appointment', component: AppoinmentComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'login', component: LoginComponent},
+    {path: 'register', component: RegisterComponent},
 ]

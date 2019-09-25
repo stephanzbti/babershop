@@ -14,7 +14,9 @@ import { BarbersComponent } from './pages/barbers/barbers.component';
 import { AppoinmentComponent } from './pages/appoinment/appoinment.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
-import { MidlebarComponent } from './components/midlebar/midlebar.component'
+import { MidlebarComponent } from './components/midlebar/midlebar.component';
+import { SidebarTopComponent } from './components/sidebar-top/sidebar-top.component';
+import { RegisterComponent } from './pages/register/register.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { MidlebarComponent } from './components/midlebar/midlebar.component'
     AppoinmentComponent,
     ContactComponent,
     LoginComponent,
-    MidlebarComponent
+    MidlebarComponent,
+    SidebarTopComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
