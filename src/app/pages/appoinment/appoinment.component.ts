@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import Calendar from 'react-calendar';
 
 @Component({
   selector: 'app-appoinment',
