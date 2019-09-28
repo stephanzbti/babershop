@@ -16,7 +16,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MidlebarComponent } from './components/midlebar/midlebar.component';
 import { SidebarTopComponent } from './components/sidebar-top/sidebar-top.component';
-import { RegisterComponent } from './pages/register/register.component'
+import { RegisterComponent } from './pages/register/register.component';
+import { AccountComponent } from './pages/account/account.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { RegisterComponent } from './pages/register/register.component'
     LoginComponent,
     MidlebarComponent,
     SidebarTopComponent,
-    RegisterComponent
+    RegisterComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
