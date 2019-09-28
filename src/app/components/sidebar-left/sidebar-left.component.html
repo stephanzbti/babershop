@@ -5,15 +5,15 @@
             <a [routerLink]="['']"><img src="assets/images/logos/logo.png" alt="image"></a>
         </div>
         <ul class="sidebar-nav">
-            <li><a [routerLink]="['/login']">Login</a></li>
-            <li><a [routerLink]="['/about']">About Us</a></li>
-            <li><a [routerLink]="['/services']">Our Services</a></li>
-            <li><a [routerLink]="['/barbers']">Our Barbers</a></li>
-            <li><a [routerLink]="['/appointment']">Appointment</a></li>
-            <li><a [routerLink]="['/contact']">Contact</a></li>
-            <li><a [routerLink]="['/account']">My Account</a></li>
-            <li><a [routerLink]="['/account']">Dashboard</a></li>
-            <li><a [routerLink]="['/account']">Reports</a></li>
+            <li><a [routerLink]="['/login']" *ngIf="permission.login">Login</a></li>
+            <li><a [routerLink]="['/about']" *ngIf="permission.about">About Us</a></li>
+            <li><a [routerLink]="['/services']" *ngIf="permission.service">Our Services</a></li>
+            <li><a [routerLink]="['/barbers']" *ngIf="permission.barber">Our Barbers</a></li>
+            <li><a [routerLink]="['/appointment']" *ngIf="permission.appointment">Appointment</a></li>
+            <li><a [routerLink]="['/contact']" *ngIf="permission.contact">Contact</a></li>
+            <li><a [routerLink]="['/account']" *ngIf="permission.account">My Account</a></li>
+            <li><a [routerLink]="['/dashboard']" *ngIf="permission.dashboard">Dashboard</a></li>
+            <li><a [routerLink]="['/account']" *ngIf="permission.logout">Logout</a></li>
         </ul>
     </div>
 </div>
