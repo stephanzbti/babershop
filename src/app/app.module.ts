@@ -18,6 +18,7 @@ import { MidlebarComponent } from './components/midlebar/midlebar.component';
 import { SidebarTopComponent } from './components/sidebar-top/sidebar-top.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AccountComponent } from './pages/account/account.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AccountComponent } from './pages/account/account.component';
     MidlebarComponent,
     SidebarTopComponent,
     RegisterComponent,
-    AccountComponent
+    AccountComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

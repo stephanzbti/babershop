@@ -17,15 +17,15 @@ export class SidebarLeftComponent implements OnInit {
 
   ngOnInit() {
     this.permission = {
-      login: this.perm == 'public' ? true : false,
-      about: this.perm == 'public' ? true : false,
-      service: this.perm == 'public' ? true : false,
-      barber: this.perm == 'account' ? true : false,
-      appointment: this.perm == 'account' ? true : false,
-      contact: this.perm == 'public' ? true : false,
-      account: this.perm == 'account' ? true : false,
-      dashboard: this.perm == 'admin' ? true : false,
-      logout: this.perm == 'account' ? true : false
+      login: true,
+      about: true,
+      service: true, 
+      barber: true,
+      appointment: true,
+      contact: true,
+      account: true,
+      dashboard: true,
+      logout: true
     }
   }
 
