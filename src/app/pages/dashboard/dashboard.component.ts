@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  perm:any
 
-  constructor() { }
+  constructor() {
+    this.perm = JSON.parse(localStorage.getItem('user'))
+    console.log(this.perm.name)
+  }
 
   ngOnInit() {
+    
   }
 
 }

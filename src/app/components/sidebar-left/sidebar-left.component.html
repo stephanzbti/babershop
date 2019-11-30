@@ -1,17 +1,17 @@
 <!-- Sidebar-wrapper -->
 <div id="sidebar-wrapper">
-    <div class="side-top">
+    <div>
         <div class="logo-sidebar">
             <a [routerLink]="['']"><img src="assets/images/logos/logo.png" alt="image"></a>
         </div>
         <ul class="sidebar-nav">
             <li><a [routerLink]="['/login']" *ngIf="permission.login">Login</a></li>
-            <li><a [routerLink]="['/about']" *ngIf="permission.about">About Us</a></li>
-            <li><a [routerLink]="['/services']" *ngIf="permission.service">Our Services</a></li>
-            <li><a [routerLink]="['/barbers']" *ngIf="permission.barber">Our Barbers</a></li>
-            <li><a [routerLink]="['/appointment']" *ngIf="permission.appointment">Appointment</a></li>
-            <li><a [routerLink]="['/contact']" *ngIf="permission.contact">Contact</a></li>
-            <li><a [routerLink]="['/account']" *ngIf="permission.account">My Account</a></li>
+            <li><a [routerLink]="['/about']" *ngIf="permission.about">Sobre Nós</a></li>
+            <li><a [routerLink]="['/services']" *ngIf="permission.service">Nossos Serviços</a></li>
+            <li><a [routerLink]="['/barbers']" *ngIf="permission.barber">The Barber's</a></li>
+            <li><a [routerLink]="['/appointment']" *ngIf="permission.appointment">Horários</a></li>
+            <li><a [routerLink]="['/contact']" *ngIf="permission.contact">Contato</a></li>
+            <li><a [routerLink]="['/account']" *ngIf="permission.account">Cadastre-se</a></li>
             <li><a [routerLink]="['/dashboard']" *ngIf="permission.dashboard">Dashboard</a></li>
             <li><a [routerLink]="['/logout']" *ngIf="permission.logout">Logout</a></li>
         </ul>

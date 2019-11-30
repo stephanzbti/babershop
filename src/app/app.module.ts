@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router'
 
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarLeftComponent } from './components/sidebar-left/sidebar-left.component';
@@ -19,6 +20,7 @@ import { SidebarTopComponent } from './components/sidebar-top/sidebar-top.compon
 import { RegisterComponent } from './pages/register/register.component';
 import { AccountComponent } from './pages/account/account.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -36,12 +38,14 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     SidebarTopComponent,
     RegisterComponent,
     AccountComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

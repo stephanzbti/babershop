@@ -21,11 +21,11 @@ export class SidebarLeftComponent implements OnInit {
       about: true,
       service: true, 
       barber: true,
-      appointment: true,
+      appointment: this.perm == 'cliente' ? true : false,
       contact: true,
-      account: true,
-      dashboard: true,
-      logout: true
+      account: this.perm == null ? true : false,
+      dashboard:  this.perm == 'admin' ? true : false,
+      logout: this.perm != null ? true : false
     }
   }
 

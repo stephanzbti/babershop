@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from 'src/app/services/users/users.service';
 
 @Component({
   selector: 'app-login',
@@ -7,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  loginUser() {
-    window.localStorage.setItem('permission','account')
-  }
-
-  constructor() { }
+  constructor(public userService: UsersService) { }
 
   ngOnInit() {
+  }
+
+  login(username: string, password: string) {
+    let resposta = this.userService.loginUser(username, password)
+    if (resposta != null) {
+      window.localStorage.setItem('user',JSON.stringify(resposta))
+      window.localStorage.setItem('permission',resposta.perfil)
+      location.reload()
+    }
   }
 
 }

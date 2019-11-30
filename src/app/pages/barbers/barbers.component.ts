@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BarbersService } from 'src/app/services/barbers/barbers.service';
 
 @Component({
   selector: 'app-barbers',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarbersComponent implements OnInit {
 
-  constructor() { }
+  constructor(public barbersService: BarbersService) { }
 
   ngOnInit() {
+    this.barbersService.getListBarbers();
   }
 
 }

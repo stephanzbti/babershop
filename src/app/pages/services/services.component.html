@@ -6,51 +6,20 @@
     <div class="container-fluid">
         <div class="section-title row text-center">
             <div class="col-md-8 col-md-offset-2">
-            <small>WELCOME TO THE OUR BARBER SHOP</small>
-            <h3>OUR SERVICES</h3>
-            <hr class="grd1">
-            <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+                <small>CONHEÇA OS SERVIÇOS DA BARBERSHOP</small>
+                <h3>NOSSOS SERVIÇOS</h3>
+                <hr class="grd1">
+                <p class="lead">Montamos uma amostra dos serviços realizados na BarberShop, nossos profissionais são
+                    capacitados e atuam em diversas áreas, confira.</p>
             </div>
         </div><!-- end title -->
 
         <div class="row">
-            <div class="col-md-6">
+            <div *ngFor="let serv of servicesService.listService" class="col-md-6">
                 <div class="service-wrap clearfix">
-                    <img src="assets/uploads/barber_service_01.jpg" alt="" class="img-responsive img-rounded alignleft">
-                    <h4>beard, mustache care</h4>
-                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
-                </div><!-- end issue -->
-
-                <div class="service-wrap clearfix">
-                    <img src="assets/uploads/barber_service_02.jpg" alt="" class="img-responsive img-rounded alignleft">
-                    <h4>detailed feather cleaning</h4>
-                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
-                </div><!-- end issue -->
-
-                <div class="service-wrap lastchild clearfix">
-                    <img src="assets/uploads/barber_service_03.jpg" alt="" class="img-responsive img-rounded alignleft">
-                    <h4>facial and skin care</h4>
-                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
-                </div><!-- end issue -->
-            </div><!-- end col -->
-
-            <div class="col-md-6">
-                <div class="service-wrap clearfix">
-                    <img src="assets/uploads/barber_service_04.jpg" alt="" class="img-responsive img-rounded alignleft">
-                    <h4>studio shots</h4>
-                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
-                </div><!-- end issue -->
-
-                <div class="service-wrap clearfix">
-                    <img src="assets/uploads/barber_service_05.jpg" alt="" class="img-responsive img-rounded alignleft">
-                    <h4>forming the beard</h4>
-                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
-                </div><!-- end issue -->
-
-                <div class="service-wrap lastchild clearfix">
-                    <img src="assets/uploads/barber_service_06.jpg" alt="" class="img-responsive img-rounded alignleft">
-                    <h4>hair wash</h4>
-                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                    <img [src]="serv.imagePath" alt="" class="img-responsive img-rounded alignleft">
+                    <h4>{{serv.title}}</h4>
+                    <p>{{serv.text}}</p>
                 </div><!-- end issue -->
             </div><!-- end col -->
         </div>
@@ -58,75 +27,28 @@
         <hr class="invis4">
 
         <div class="text-center">
-            <a href="#services" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1">APPOINTMENT NOW</a>
+            <a [routerLink]="['/appointment']" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1">AGENDE
+                SEU HORÁRIO AGORA</a>
         </div>
     </div><!-- end container -->
 </div><!-- end section -->
 
-<div id="testimonials" class="parallax section db parallax-off" style="background-image:url('assets/uploads/parallax_20.jpg');">
+<div id="testimonials" class="parallax section db parallax-off"
+    style="background-image:url('assets/uploads/parallax_20.jpg');">
     <div class="container-fluid">
         <div class="section-title row text-center">
-            <div class="col-md-8 col-md-offset-2">
-            <small>LET'S SEE OUR TESTIMONIALS</small>
-            <h3>HAPPY TESTIMONIALS</h3>
-            <hr class="grd1">
-            <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
-            </div>
-        </div><!-- end title -->
-
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="testi-carousel owl-carousel owl-theme">                                
-                    <div class="testimonial clearfix">
-                        <div class="desc">
-                            <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                            <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                        </div>
-                        <div class="testi-meta">
-                            <img src="assets/uploads/testi_01.png" alt="" class="img-responsive alignright">
-                            <h4>James Fernando <small>- Manager of Racer</small></h4>
-                        </div>
-                        <!-- end testi-meta -->
-                    </div>
-                    <!-- end testimonial -->
-                    <div class="testimonial clearfix">
-                        <div class="desc">
-                            <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                            <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                        </div>
-                        <div class="testi-meta">
-                            <img src="assets/uploads/testi_02.png" alt="" class="img-responsive alignright">
-                            <h4>Jacques Philips <small>- Designer</small></h4>
-                        </div>
-                        <!-- end testi-meta -->
-                    </div>
-                    <!-- end testimonial -->
-                    <div class="testimonial clearfix">
-                        <div class="desc">
-                            <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                            <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                        </div>
-                        <div class="testi-meta">
-                            <img src="assets/uploads/testi_03.png" alt="" class="img-responsive alignright">
-                            <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                        </div>
-                        <!-- end testi-meta -->
-                    </div>
-                    <!-- end testimonial -->
-                    <div class="testimonial clearfix">
-                        <div class="desc">
-                            <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                            <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                        </div>
-                        <div class="testi-meta">
-                            <img src="assets/uploads/testi_03.png" alt="" class="img-responsive alignright">
-                            <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                        </div>
-                        <!-- end testi-meta -->
-                    </div>
-                    <!-- end testimonial -->
-                </div><!-- end carousel -->
-            </div><!-- end col -->
-        </div><!-- end row -->
-    </div><!-- end container -->
+            <<div class="col-md-8 col-md-offset-2">
+                <small>CONHEÇA NOSSO ATENDIMENTO</small>
+                <h3>ATENDIMENTO AOS CLIENTES</h3>
+                <hr class="grd1">
+                <p class="lead">Telefone: (31) 3466-6788<br>
+                    Celular: (31) 98755-8261.<br>
+                    Email: Barbershop.bh@outlook.com<br>
+                    Rua Pomba Branca, 445, Padre Eustáquio, MG</p>
+                <br><br>
+                <a [routerLink]="['/contact']" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1">Mande
+                    uma mensagem</a>
+        </div>
+    </div><!-- end title -->
+</div><!-- end container -->
 </div><!-- end section -->

@@ -1,0 +1,118 @@
+{
+    "login": [
+        {
+            "id": 1,
+            "username": "admin",
+            "password": "123456",
+            "perfil": "admin",
+            "name": "Stephan Bartkowiak"
+        },
+        {
+            "id": 2,
+            "username": "cliente",
+            "password": "123456",
+            "perfil": "cliente"
+        }
+    ],
+    "barbers": [
+        {
+            "id": 1,
+            "imagePath": "assets/uploads/barber_team_01.jpg",
+            "name": "Leandro Reis",
+            "occupation": "Fundador",
+            "text": "Olá pessoal, eu sou Leandro Reis. Sou diretor de arte sênior e fundador da BarberShop.",
+            "facebook": "face/leandro",
+            "twitter": "",
+            "likedin": "",
+            "git": ""
+        },
+        {
+            "id": 2,
+            "imagePath": "assets/uploads/barber_team_03.jpg",
+            "name": "Gustavo Oliveira",
+            "occupation": "Barbeiro",
+            "text": "Olá pessoal, eu sou Gustavo Oliveira. Sou diretor de arte sênior e barbeiro da BarberShop..",
+            "facebook": "face/gustavo",
+            "twitter": "",
+            "likedin": "",
+            "git": ""
+        },
+        {
+            "id": 3,
+            "imagePath": "assets/uploads/barber_team_02.jpg",
+            "name": "Alan Felipe",
+            "occupation": "Barbeiro",
+            "text": "Olá pessoal, eu sou Alan Felipe. Sou diretor de arte e barbeiro do site da barbearia.",
+            "facebook": "face/Alanfelipe",
+            "twitter": "",
+            "likedin": "",
+            "git": ""
+        },
+        {
+            "id": 4,
+            "imagePath": "assets/uploads/barber_team_04.jpg",
+            "name": "James Harden",
+            "occupation": "Barbeiro",
+            "text": "Olá pessoal, eu sou J. Harden. Sou americano e trago os melhores e mais atuais estilos afro-americanos.",
+            "facebook": "face/fernando",
+            "twitter": "",
+            "likedin": "",
+            "git": ""
+        },
+        {
+            "id": 5,
+            "imagePath": "assets/uploads/barber_team_05.jpg",
+            "name": "Kyrie Irving",
+            "occupation": "Barbeiro & Estilista",
+            "text": "Hello guys, eu sou Kyrie. Venho dos EUA e trago toda a experiência americana para a BarberShop.",
+            "facebook": "face/fernando",
+            "twitter": "",
+            "likedin": "",
+            "git": ""
+        },
+        {
+            "id": 6,
+            "imagePath": "assets/uploads/barber_team_06.jpg",
+            "name": "Lucas Felipe",
+            "occupation": "Barbeiro",
+            "text": "Fala galera, eu sou Lucas. Venha nos fazer uma visita, você vai gostar dos cortes de cabelo e barba separados por mim.",
+            "facebook": "face/fernando",
+            "twitter": "",
+            "likedin": "",
+            "git": ""
+        },
+        {
+            "id": 7,
+            "imagePath": "assets/uploads/barber_team_07.jpg",
+            "name": "Christofer Wallace",
+            "occupation": "Barbeiro",
+            "text": "Iae galera, eu sou Christofer, cuido de cortes mais específicos como tranças, dreads e entre outros, bora fazer algo novo? haha...",
+            "facebook": "face/fernando",
+            "twitter": "",
+            "likedin": "",
+            "git": ""
+        },
+        {
+            "id": 8,
+            "imagePath": "assets/uploads/barber_team_08.jpg",
+            "name": "Vinicius Andersom",
+            "occupation": "Barbeiro",
+            "text": "Olá pessoal, eu sou Vinícius. Trabalho com os cortes da moda atual, para o público de jovens e crianças, não perca tempo e marque o seu horário.",
+            "facebook": "face/fernando",
+            "twitter": "",
+            "likedin": "",
+            "git": ""
+        },
+        {
+            "id": 9,
+            "imagePath": "assets/uploads/barber_team_09.jpg",
+            "name": "Ana Rabelo",
+            "occupation": "Barbeira Designer & Estilista",
+            "text": "Olá pessoal, eu sou a Ana. Sou barbeira, designer e estilista da BarberShop venha conhecer nosso trabalho, esperamos vocês.",
+            "facebook": "face/fernando",
+            "twitter": "",
+            "likedin": "",
+            "git": ""
+        }
+    ]
+}
