@@ -18,31 +18,31 @@
                     <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
                         <fieldset class="row-fluid">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Nome Completo">
+                                <input type="text" name="first_name" #nameRegister id="first_name" class="form-control" placeholder="Nome Completo">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" name="apelido" id="apelido" class="form-control" placeholder="Apelido">
+                                <input type="text" name="apelido" #userName id="apelido" class="form-control" placeholder="Apelido">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Senha">
+                                <input type="password" name="password" #password id="password" class="form-control" placeholder="Senha">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirme a senha">
+                                <input type="password" name="confirm_password" #confirm_password id="confirm_password" class="form-control" placeholder="Confirme a senha">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                                <input type="text" name="email" id="email" #emailRegister class="form-control" placeholder="Email">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" name="confirm_email" id="confirm_email" class="form-control" placeholder="Confirm Email">
+                                <input type="text" name="confirm_email" id="confirm_email" #confirm_email class="form-control" placeholder="Confirm Email">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF">
+                                <input type="text" name="cpf" id="cpf" #cpfRegister class="form-control" placeholder="CPF">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="date" name="birth" id="birth" class="form-control" placeholder="Data de Aniversário">
+                                <input type="date" name="birth" id="birth" #birthDate class="form-control" placeholder="Data de Aniversário">
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                                <button type="button" id="login" class="btn btn-light btn-radius btn-brd grd1 btn-block subt" [routerLink]="['/login']">Criar Conta</button>
+                                <button type="button" id="login" class="btn btn-light btn-radius btn-brd grd1 btn-block subt" (click)="register(nameRegister.value, userName.value, password.value, confirm_password.value, emailRegister.value, confirm_email.value, cpfRegister.value, birthDate.value)">Criar Conta</button>
                             </div>
                         </fieldset>
                     </form>
