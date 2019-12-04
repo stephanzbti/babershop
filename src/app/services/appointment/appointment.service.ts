@@ -12,10 +12,11 @@ export class AppointmentService {
 
   constructor(public http: HttpClient) { }
 
-  registerAppoinmentUser(user_id: number, name: string, date: string, ) {
+  registerAppoinmentUser(user_id: number, name: string, date: string, details: string) {
     this.Appointment.date = date
     this.Appointment.name = name
     this.Appointment.user_id = user_id
+    this.Appointment.details = details
 
     this.http.post('http://localhost:3000/login', this.Appointment).subscribe()
   }

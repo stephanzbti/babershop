@@ -26,50 +26,58 @@
       "id": 1,
       "date": "10/09/2019 10:00:00",
       "name": "Taito Fu",
-      "user_id": 2
+      "user_id": 2,
+      "details": ""
     },
     {
       "id": 2,
       "date": "15/09/2019 12:10:00",
       "name": "Mario",
-      "user_id": 2
+      "user_id": 2,
+      "details": ""
     },
     {
       "id": 3,
       "date": "10/09/2019 12:30:00",
       "name": "Luigi",
-      "user_id": 2
+      "user_id": 2,
+      "details": ""
     },
     {
       "id": 4,
       "date": "10/09/2019 13:53:00",
       "name": "Link",
-      "user_id": 2
+      "user_id": 2,
+      "details": ""
     },
     {
       "id": 5,
       "date": "10/09/2019 16:37:00",
       "name": "Zelda",
-      "user_id": 2
+      "user_id": 2,
+      "details": ""
     },
     {
       "id": 6,
       "date": "10/09/2019 15:32:00",
       "name": "Pikachu",
-      "user_id": 2
+      "user_id": 2,
+      "details": ""
     },
     {
       "id": 7,
       "date": "10/09/2019 11:02:00",
       "name": "Dragonite",
-      "user_id": 2
+      "user_id": 2,
+      "details": ""
     },
     {
       "id": 8,
       "date": "10/09/2019 13:50:00",
       "name": "Kurby",
-      "user_id": 2
-    },
+      "user_id": 2,
+      "details": ""
+    }
   ],
   "barbers": [
     {
