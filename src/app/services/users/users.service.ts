@@ -9,7 +9,7 @@ import { Users } from './users.model';
 export class UsersService {
 
   listUsers: Users[] = []
-  user: Users;
+  user: Users
 
   constructor(public http: HttpClient) { this.loginUser('', '') }
 

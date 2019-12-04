@@ -12,7 +12,6 @@ export class SidebarLeftComponent implements OnInit {
 
   constructor() { 
     this.perm = localStorage.getItem('permission')
-    console.log(this.perm)
   }
 
   ngOnInit() {

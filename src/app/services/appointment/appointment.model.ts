@@ -1,18 +1,13 @@
-import { Barbers } from '../barbers/barbers.model';
-import { Clients } from '../clients/clients.model'
-
 export class Appointment {
     id: number;
     date: string;
-    barber: Barbers;
-    client: Clients;
-    value: number;
+    user_id: number;
+    name: string;
 
     constructor() {
         this.id = 0;
         this.date = '';
-        this.barber = null;
-        this.client = null;
-        this.value = 0;
+        this.user_id = 0;
+        this.name = '';
     }
 }

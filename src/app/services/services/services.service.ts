@@ -46,8 +46,4 @@ export class ServicesService {
   ]
 
   constructor() { }
-
-  getListService() {
-
-  }
 }
