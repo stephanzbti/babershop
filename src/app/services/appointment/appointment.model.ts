@@ -4,6 +4,7 @@ export class Appointment {
     user_id: number;
     name: string;
     details: string;
+    confirm: boolean;
 
     constructor() {
         this.id = 0;
@@ -11,5 +12,6 @@ export class Appointment {
         this.user_id = 0;
         this.name = '';
         this.details = '';
+        this.confirm = false;
     }
 }

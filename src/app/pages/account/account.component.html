@@ -5,7 +5,7 @@
         <div class="section-title row text-center">
             <div class="col-md-8 col-md-offset-2">
             <small>SEJA BEM-VINDO</small>
-            <h3>"NOME DO CLIENTE"</h3>
+            <h3>{{user.name}}</h3>
             <hr class="grd1">
             <p class="lead">Seja Bem-vindo, nós da BarberShop ficamos feliz de termos você.</p>
             </div>
@@ -18,26 +18,20 @@
                     <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
                         <fieldset class="row-fluid">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Nome Completo" disabled>
+                                <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Nome Completo" [value]="user.name" disabled>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="password" name="last_name" id="last_name" class="form-control" placeholder="Apelido" disabled>
+                                <input type="text" name="birth" id="birth" class="form-control" placeholder="Nascimento" [value]="user.birth" disabled>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Senha" disabled>
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Email" [value]="user.email" disabled>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" name="email" id="email" class="form-control" placeholder="Email" disabled>
+                                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF" [value]="user.cpf" disabled>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF" disabled>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" name="birth" id="birth" class="form-control" placeholder="Aniversário" disabled>
-                            </div>
-                            {% comment %} <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                                 <button type="button" id="login" class="btn btn-light btn-radius btn-brd grd1 btn-block subt" [routerLink]="['/login']">Editar</button>
-                            </div> {% endcomment %}
+                            </div> -->
                         </fieldset>
                     </form>
                 </div>

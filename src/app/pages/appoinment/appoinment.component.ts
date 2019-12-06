@@ -10,19 +10,30 @@ export class AppoinmentComponent implements OnInit {
 
   appointments: any[] = []
 
-  constructor(public appoinmentService: AppointmentService) { }
+  constructor(public appoinmentService: AppointmentService) {  }
 
   ngOnInit() {
+    this.getUserAppoinment()
   }
 
-  registerAppointment(name: string, date: string, details: string) {
-    let user = JSON.parse(localStorage.getItem('permission'));
-    this.appoinmentService.registerAppoinmentUser(user.id, name, date, details)
+  confirmAppoinment(appoinmentId: any) {
+    this.appoinmentService.confirmAppoinmentUser(appoinmentId)
+    this.ngOnInit()
+  }
+
+  clearAppoinment(appoinmentId: any) {
+    this.appoinmentService.deleteAppoinmentUser(appoinmentId)
+    this.ngOnInit()
+  }
+
+  registerAppointment(name: string, date: any, time: any, details: string) {
+    let user = JSON.parse(localStorage.getItem('user'));
+    this.appoinmentService.registerAppoinmentUser(user.id, name, date, time, details)
     this.ngOnInit()
   }
 
   getUserAppoinment() {
-    let user = JSON.parse(localStorage.getItem('permission'));
-    this.appoinmentService.getAppoinmentUser(user.id)
+    let user = JSON.parse(localStorage.getItem('user'));
+    this.appointments = this.appoinmentService.getAppoinmentUser(user.id)
   }
 }

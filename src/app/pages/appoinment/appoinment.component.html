@@ -63,7 +63,7 @@
                                 <textarea class="form-control" #details name="comments" id="comments" rows="6" placeholder="Mais detalhes..."></textarea>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                                <button type="button" value="SEND" id="appointment" class="btn btn-light btn-radius btn-brd grd1 btn-block subt" (click)="registerAppointment(firstName+' '+lastName, date+' '+time, details)">Agendar</button>
+                                <button type="button" value="SEND" id="appointment" class="btn btn-light btn-radius btn-brd grd1 btn-block subt" (click)="registerAppointment(firstName.value+' '+lastName.value, date.value, time.value, details.value)">Agendar</button>
                             </div>
                         </fieldset>
                     </form>
@@ -92,20 +92,18 @@
                         <fieldset class="row-fluid">
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <input type="text" name="day" id="day_item" class="form-control"
-                                    [placeholder]="appointment.day" disabled>
+                                    [placeholder]="appointment.date" disabled>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <input type="text" name="first_name" id="first_name" class="form-control"
                                     [placeholder]="appointment.name" disabled>
                             </div>
+                            <input type="text" name="appointmentID" id="appointmentID" class="form-control" [value]="appointment.id" #appointment_id disabled hidden>
                             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                <button type="button" id="login"
-                                    class="btn btn-light btn-radius btn-brd grd1 btn-block subt">Clear
-                                    Appointment</button>
+                                <button type="button" id="login" class="btn btn-light btn-radius btn-brd grd1 btn-block subt" (click)="clearAppoinment(appointment_id.value)">Clear Appointment</button>
                             </div>
                             <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                                <button type="button" id="login"
-                                    class="btn btn-light btn-radius btn-brd grd1 btn-block subt">Confirm</button>
+                                <button type="button" id="login" class="btn btn-light btn-radius btn-brd grd1 btn-block subt" (click)="confirmAppoinment(appointment_id.value)" [disabled]="appointment.confirm">Confirm</button>
                             </div>
                         </fieldset>
                     </form>
