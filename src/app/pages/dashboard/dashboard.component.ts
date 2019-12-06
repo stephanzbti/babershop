@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,13 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
   perm:any
 
-  constructor() {
+  constructor(private router: Router) {
     this.perm = JSON.parse(localStorage.getItem('user'))
     console.log(this.perm.name)
   }
 
   ngOnInit() {
-    
+    if (this.perm != null) {
+      this.router.navigate(['']);
+    }
   }
 
 }

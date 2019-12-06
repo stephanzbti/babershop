@@ -11,11 +11,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  perm:any
 
   constructor(public userService: UsersService,
     private router: Router) { }
 
   ngOnInit() {
+    if (this.perm != null) {
+      this.router.navigate(['']);
+    }
   }
 
   register(name: string, userName: string, password: string, confirm_password: string, emailRegister: string, confirm_email:string, cpfRegister: string, birthDate: Date) {
