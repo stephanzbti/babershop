@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppointmentService } from 'src/app/services/appointment/appointment.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-appoinment',
@@ -9,10 +10,18 @@ import { AppointmentService } from 'src/app/services/appointment/appointment.ser
 export class AppoinmentComponent implements OnInit {
 
   appointments: any[] = []
+  perm: any = null
 
-  constructor(public appoinmentService: AppointmentService) {  }
+  constructor(
+    public appoinmentService: AppointmentService,
+    private router: Router
+  ) {  }
 
   ngOnInit() {
+    this.perm = localStorage.getItem('permission')
+    if (this.perm == null) {
+      this.router.navigate(['']);
+    }
     this.getUserAppoinment()
   }
 

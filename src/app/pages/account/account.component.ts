@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AccountComponent implements OnInit {
   user: any
-  perm: any
+  perm: any = null
 
   constructor(
     public userService: UsersService,
@@ -18,7 +18,8 @@ export class AccountComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if (this.perm != null) {
+    this.perm = localStorage.getItem('permission')
+    if (this.perm == null) {
       this.router.navigate(['']);
     }
     this.user = JSON.parse(localStorage.getItem('user'));

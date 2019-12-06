@@ -7,15 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  perm:any
+  perm:any = null
 
-  constructor(private router: Router) {
-    this.perm = JSON.parse(localStorage.getItem('user'))
-    console.log(this.perm.name)
-  }
+  constructor(private router: Router) {  }
 
   ngOnInit() {
-    if (this.perm != null) {
+    this.perm = localStorage.getItem('permission')
+    if (this.perm == null) {
       this.router.navigate(['']);
     }
   }
